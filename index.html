@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+
+    <div class = "main">
+
+        <section class = "game-score">
+            <div class = "game">
+                <h1>
+                    ROCK
+                    <br>
+                    PAPER
+                    <br>
+                    SCISSORS
+                </h1>
+            </div>
+
+            <div class = "score">
+                <div class = "score-1">
+                    <p class = "score-head">COMPUTER SCORE</p>
+                    <p class = "score-value">0</p>
+                </div>
+
+                <div class = "score-2">
+                    <p class = "score-head">YOUR SCORE</p>
+                    <p class = "score-value">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class = "game-play">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+
+            <div class = "triangle">
+                <div class = "item rock">
+                    <img src = "./images/rock.svg" alt="rock">
+                </div>
+                <div class = "item scissor">
+                    <img src = "./images/scissor.svg" alt="scissor">
+                </div>
+                <div class = "item paper">
+                    <img src = "./images/paper.svg" alt="paper">
+                </div>
+            </div>
+
+        </section>
+
+        <section class = "result" style="display: none;">
+                <div class = "user-picked">
+                    <p class = "label">YOU PICKED</p>
+                    <div class = "item picked-image" id="user-choice">
+                            <img id="user-img" src="" alt="user choice" style="z-index:1">
+                            <div class="animation">
+                                <div class="ripple"></div>
+                                <div class="ripple"></div>
+                                <div class="ripple"></div>
+                            </div>
+                        
+                    </div>
+                </div>
+
+                <div class = "status">
+                    <p class = "result-message"></p>
+                    <p class = "against">AGAINST PC</p>
+
+                    <button class = "play-again">PLAY AGAIN</button>
+                </div>
+
+                <div class = "pc-picked">
+                    <p class = "label">PC PICKED</p>
+                    <div class = "item picked-image" id = "pc-choice">
+                        <img id="pc-img" src="" alt="pc choice" style="z-index:1">
+                        <div class="animation">
+                            <div class="ripple"></div>
+                            <div class="ripple"></div>
+                            <div class="ripple"></div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <section class="celebration" style="display: none;">
+            <p>Hurray!!</p>
+            <p>You won the game</p>
+            <img src="./images/cup.svg" alt="Cup">
+            
+            <button class="play-again">Play Again</button>
+        </section>
+
+        <!-- Button Area -->
+        <section class="button-area">
+            <div class = "rules-list" style="display: none;">
+
+                <button id="rules-close-button">X</button>
+
+                <h3>Game Rules</h3>
+
+                <ul type="square">
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+
+            </div>
+            <button class="rules-btn">RULES</button>
+
+            <button class="next-btn" style="display: none;">NEXT</button>
+        </section>
+
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
